@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Portfolio | Konstantin Gaydukov</title>
+</head>
+<body>
+    <header>
+        <a href="#" id="logo">
+            <h2>wdk...</h2>
+        </a>
+
+        <nav>
+            <a href="#" class="hide-desktop">
+                <img id="menu" src="images/hamburger_menu_ico.svg" alt="toggle-menu">
+            </a>
+            <ul class="hide-mobile" id="nav">
+                <li id="exit" class="hide-desktop exit-btn">
+                    <h2>WDK...</h2>
+                    <img src="images/exit_menu_ico.svg" alt="exit-menu">
+                </li>
+                <li>
+                    <h3>navigation</h3>
+                    
+                </li>
+                <li><a href="#">about me</a></li>
+                <li><a href="#">projects</a></li>
+                <li><a href="#">contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+
+            <div class="about">
+                <div class="container">
+                    <h1>Web Developer</h1>
+                    
+                    <img class="ico" src="images/laptops.svg" alt="two laptops">
+
+                    <div class="left">
+                        <h3>about me</h3>
+                        <p>Building web aplicationsand websites for your needs.<p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects">
+                <div class="container">
+                    <img class="ico" src="images/projects.svg" alt="grid of rectangles">
+
+                    <div class="left">
+                        <h3>projects</h3>
+                        <p>creating elegant and functional custom-designed websites</p>
+                    </div>
+                </div>    
+            </div>
+            
+            <div class="contacts">
+                <div class="container">
+                    <img class="ico" src="images/contacts.svg" alt="grid of rectangles">
+
+                    <div class="left">
+                        <h3>contacts</h3>
+                        <p>creating elegant and functional custom-designed websites</p>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="about" id="about">
+
+            <div class="container">
+
+                <h3>about me</h3>
+                
+                <img src="images/Mask Group 1.svg" alt="Konstantin's portret">
+                <div class="left">
+                    <p>My name is Konstantin, I’m from Russia but been living in China, Shenzhen for the past 6 years. My major is “mining engineering” but  I didn’t like the field. So few years after graduation I moved to China to teach English instead.</p> 
+        
+                    <p>I feel very passionate about coding and I’m in the middle of changing career. I always kept myself away from dealing with computers as I thought it is “not for me”. Even though I loved math, physics and general problem solving through all school and university years.</p>
+                            
+                    <p>I’m learning front end web development now(sharpening my HTML, CSS, Vanilla JS skills and planing to pick up React in a nearly future) but also interested in back end (Node, JAVA, Python).</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <h3>projects</h3>
+                
+    
+                <div class="grid">
+                    <a href="#">
+                        <img src="#" alt="project_1">
+                    </a>
+                    <a href="#">
+                        <img src="#" alt="project_2">
+                    </a>
+                    <a href="#">
+                        <img src="#" alt="project_3">
+                    </a>
+                    <a href="#">
+                        <img src="#" alt="project_4">
+                    </a>
+                    <a href="#">
+                        <img src="#" alt="project_5">
+                    </a>
+                    <a href="#">
+                        <img src="#" alt="project_6">
+                    </a>
+                    <a href="#">
+                        <img src="#" alt="project_7">
+                    </a>
+                    <a href="#">
+                        <img src="#" alt="project_8">
+                    </a>
+                    <a href="#">
+                        <img src="#" alt="project_9">
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="contacts" class="contacts">
+
+            <div class="container">
+                <h3>contacts</h3>
+                
+                <ul>
+                    <li>hello@webdevkos.com</li>
+                    <li>
+                        <img src="images/codepen_ico.svg" alt="codepen_ico">
+                        <ul>
+                            <li>
+                                <img src="images/twitter_ico.svg" alt="twitter_ico">
+                            </li>
+                            <li>
+                                <img src="images/github_ico.svg" alt="github_ico">
+                            </li>
+                            <li>
+                                <img src="images/instagram_ico.svg" alt="instagram_ico">
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <footer>
+            <p>Designed and coded by Konstantin Gaydukov 2019</p>
+        </footer>
+    </main>
+
+    <script>
+
+            var menu = document.getElementById('menu');
+            var nav = document.getElementById('nav');
+            var exit = document.getElementById('exit');
+    
+            menu.addEventListener('click', function(e){
+                nav.classList.toggle('hide-mobile');
+                e.preventDefault();
+            });
+            exit.addEventListener('click', function(e){
+                nav.classList.add('hide-mobile');
+                e.preventDefault();
+            });
+    
+    
+          
+            
+            
+        </script>
+    
+</body>
+</html>
