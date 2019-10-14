@@ -6,13 +6,14 @@
 html {
     scroll-behavior: smooth;
     text-align: center;
+    height: 100%;
 }
 
 body {
     margin: 0;
     min-width: 300px;
     font-family: 'Montserrat', sans-serif;
-    text-shadow: 1px 1px 2px #57575E;
+    text-shadow: .5px .5px 1px #57575E;
     background-color: #8AC4E3;
     color: #f1f1f1;
     
@@ -37,6 +38,11 @@ header {
 #logo {
     text-decoration: none;
     color: #F1F1F1;
+}
+
+#logo p {
+    font-size: 1.5em;
+    font-weight: 500;
 }
 
 
@@ -87,30 +93,28 @@ nav ul li a:hover {
     margin: -80px 0 0 0;
 } */
 
-/* hero section */
-
-.projects, .contacts, .about {
+/* welcome-section section */
+.projects_hero, .contacts_hero, .about_hero{
     height: 100vh;
+}
+
+/* centering all the elements */
+.projects_hero, .contacts_hero, .about_hero, .projects, .contacts, .about {
+    /* height: 100vh; */
     display: flex;
     justify-content: center;
     align-items: center;
-    /* position: relative; */
+    padding: 20% 15%;
+
 }
 
-.container {
-    padding: 20%;
-    /* margin: 0; */
-    /* position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%); */
+
+
+.projects_hero, .projects {
+    background-color: #F76C6C;
 }
 
-.projects {
-    background-color: #f9a1a1;
-}
-
-.contacts {
+.contacts_hero, .contacts, footer {
     background-color: #374785;
 }
 
@@ -119,33 +123,143 @@ nav ul li a:hover {
 /* hero: about */
 h1 {
     margin-top: 2em;
-    font-size: 1.7em;
+    /* font-size: 1.7em; */
     color: #374785;
-    text-shadow: 4px -4px 0px #F1F1F1;
+    text-shadow: 3px -3px 0px #F1F1F1;
 
 }
 
-/* h1::before {
-    content: "Web Developer";
-    position: relative;
-    top: -4px;
-    left: 45%;
-    color: #374785;
-} */
+.laptops {
+    width: 85%;
+    max-width: 700px;
+    margin-top: 20%;
+}
 
+/* hero: projects and contacts */
 .ico {
-    width: 65%;
-    max-width: 750px;
+    width: 55%;
+    max-width: 300px;
     margin-top: 15%;
 }
 
 .left {
     text-align: left;
-    margin-top: 15%;
+    margin-top: 20%;
+}
+
+/* about section */
+
+.avatar {
+    width: 45%;
+    max-width: 400px;
+    border-radius: 50%;
+}
+
+#about {
+    background-color: #374785;
+}
+
+h2 {
+    color: #F76C6C;  
+    text-shadow: 3px -3px 0px #F1F1F1;
+    margin: 2em;
+}
+
+#about p {
+    font-size: .8em;
+    text-shadow: none;
+    font-weight: 300;
+}
+
+/* projects secttion */
+
+#projects h2 {
+    color: #374785;
+    
+}
+
+.grid {
+    display: grid;
+	grid-gap: 30px;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.project-tile {
+}
+
+.project-image {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+
+    /* box-shadow: none; */
+}
+
+.button {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+
+}
+
+.button:hover {
+    background-color: #F9A1A1;
+}
+
+.btn {
+    display: flex;
+    /* height: 100%; */
+    height: 4rem;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #8AC4E3; */
+    border-radius: 4px;
+    /* padding-top: 1em; */
 }
 
 
+/* contacts section */
 
+
+#float-right {
+    display: flex;
+    /* flex-flow: row; */
+    justify-content: space-between;
+    /* vertical-align: bottom; */
+    
+    
+}
+
+
+#float-right img {
+    width: 100%;
+    height: 35px;
+    position: relative;
+    top: .8rem;
+    /* display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 1em; */
+
+}
+
+/* #float-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+footer p {
+    margin: 0;
+    padding-bottom: 1rem;
+    font-size: .8rem;
+    text-shadow: none;
+    font-weight: 300;
+    opacity: .8;
+}
 
 @media only screen and (min-width: 1024px) {
     /* header */

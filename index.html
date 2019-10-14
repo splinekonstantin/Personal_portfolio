@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
     <title>Portfolio | Konstantin Gaydukov</title>
@@ -12,25 +13,25 @@
 <body>
     <header>
         <a href="#" id="logo">
-            <h2>wdk...</h2>
+            <p>wdk...</p>
         </a>
 
-        <nav>
+        <nav id="navbar">
             <a href="#" class="hide-desktop">
                 <img id="menu" src="images/hamburger_menu_ico.svg" alt="toggle-menu">
             </a>
             <ul class="hide-mobile" id="nav">
                 <li id="exit" class="hide-desktop exit-btn">
-                    <h2>WDK...</h2>
+                    <p>WDK...</p>
                     <img src="images/exit_menu_ico.svg" alt="exit-menu">
                 </li>
                 <li>
                     <h3>navigation</h3>
                     
                 </li>
-                <li><a href="#">about me</a></li>
-                <li><a href="#">projects</a></li>
-                <li><a href="#">contacts</a></li>
+                <li><a href="#about">about me</a></li>
+                <li><a href="#projects">projects</a></li>
+                <li><a href="#contacts">contacts</a></li>
             </ul>
         </nav>
     </header>
@@ -38,20 +39,20 @@
     <main>
         <section id="hero">
 
-            <div class="about">
+            <div id="welcome-section" class="about_hero">
                 <div class="container">
                     <h1>Web Developer</h1>
                     
-                    <img class="ico" src="images/laptops.svg" alt="two laptops">
+                    <img class="laptops" src="images/laptops.svg" alt="two laptops">
 
                     <div class="left">
                         <h3>about me</h3>
-                        <p>Building web aplicationsand websites for your needs.<p>
+                        <p>building web aplicationsand websites for your needs.<p>
                     </div>
                 </div>
             </div>
 
-            <div class="projects">
+            <div class="projects_hero">
                 <div class="container">
                     <img class="ico" src="images/projects.svg" alt="grid of rectangles">
 
@@ -62,7 +63,7 @@
                 </div>    
             </div>
             
-            <div class="contacts">
+            <div class="contacts_hero">
                 <div class="container">
                     <img class="ico" src="images/contacts.svg" alt="grid of rectangles">
 
@@ -79,10 +80,14 @@
 
             <div class="container">
 
-                <h3>about me</h3>
+                <h2>about me</h2>
                 
-                <img src="images/Mask Group 1.svg" alt="Konstantin's portret">
+                
+                    <img class="avatar" src="images/WechatIMG25(croped).jpg" alt="">
+                
                 <div class="left">
+                    <p>Good day, everyone!</p>
+
                     <p>My name is Konstantin, I’m from Russia but been living in China, Shenzhen for the past 6 years. My major is “mining engineering” but  I didn’t like the field. So few years after graduation I moved to China to teach English instead.</p> 
         
                     <p>I feel very passionate about coding and I’m in the middle of changing career. I always kept myself away from dealing with computers as I thought it is “not for me”. Even though I loved math, physics and general problem solving through all school and university years.</p>
@@ -95,64 +100,239 @@
 
         <section id="projects" class="projects">
             <div class="container">
-                <h3>projects</h3>
+                <h2>projects</h2>
                 
     
                 <div class="grid">
-                    <a href="#">
-                        <img src="#" alt="project_1">
-                    </a>
-                    <a href="#">
-                        <img src="#" alt="project_2">
-                    </a>
-                    <a href="#">
-                        <img src="#" alt="project_3">
-                    </a>
-                    <a href="#">
-                        <img src="#" alt="project_4">
-                    </a>
-                    <a href="#">
-                        <img src="#" alt="project_5">
-                    </a>
-                    <a href="#">
-                        <img src="#" alt="project_6">
-                    </a>
-                    <a href="#">
-                        <img src="#" alt="project_7">
-                    </a>
-                    <a href="#">
-                        <img src="#" alt="project_8">
-                    </a>
-                    <a href="#">
-                        <img src="#" alt="project_9">
-                    </a>
+                    <div class="project-tile">
+                        
+                        <p>Product Landing Page</p>
+
+                                <img class="project-image" src="https://screenshot.codepen.io/1505859.dLVjEy.6196c499-7858-4782-879b-f921e07657cd.png" alt="project_1">
+
+
+                        <div class="btn">
+                            <a class="button" href="" target="_blank">
+                                
+                                    <img src="images/github_ico.svg" alt="github_ico">
+
+                            </a>
+                            <a class="button" href="" target="_blank">
+                                
+                                    <img src="images/codepen_ico.svg" alt="codepen_ico">
+
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-tile">
+                        
+                            <p>Product Landing Page</p>
+
+                                    <img class="project-image" src="https://screenshot.codepen.io/1505859.dLVjEy.6196c499-7858-4782-879b-f921e07657cd.png" alt="project_1">
+    
+                            <div class="btn">
+                                <a class="button" href="" target="_blank">
+                                    
+                                        <img src="images/github_ico.svg" alt="github_ico">
+                                  
+                                </a>
+                                <a class="button" href="" target="_blank">
+                                    
+                                        <img src="images/codepen_ico.svg" alt="codepen_ico">
+                               
+                                </a>
+                            </div>
+                        </div>
+                        
+                    <div class="project-tile">
+                        
+                        <p>Product Landing Page</p>
+
+                                <img class="project-image" src="https://screenshot.codepen.io/1505859.dLVjEy.6196c499-7858-4782-879b-f921e07657cd.png" alt="project_1">
+
+
+                        <div class="btn">
+                            <a class="button" href="" target="_blank">
+                                
+                                    <img src="images/github_ico.svg" alt="github_ico">
+
+                            </a>
+                            <a class="button" href="" target="_blank">
+                                
+                                    <img src="images/codepen_ico.svg" alt="codepen_ico">
+
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-tile">
+                        
+                            <p>Product Landing Page</p>
+
+                                    <img class="project-image" src="https://screenshot.codepen.io/1505859.dLVjEy.6196c499-7858-4782-879b-f921e07657cd.png" alt="project_1">
+    
+                            <div class="btn">
+                                <a class="button" href="" target="_blank">
+                                    
+                                        <img src="images/github_ico.svg" alt="github_ico">
+                                  
+                                </a>
+                                <a class="button" href="" target="_blank">
+                                    
+                                        <img src="images/codepen_ico.svg" alt="codepen_ico">
+                               
+                                </a>
+                            </div>
+                        </div>
+                        
+                    <div class="project-tile">
+                        
+                        <p>Product Landing Page</p>
+
+                                <img class="project-image" src="https://screenshot.codepen.io/1505859.dLVjEy.6196c499-7858-4782-879b-f921e07657cd.png" alt="project_1">
+
+
+                        <div class="btn">
+                            <a class="button" href="" target="_blank">
+                                
+                                    <img src="images/github_ico.svg" alt="github_ico">
+
+                            </a>
+                            <a class="button" href="" target="_blank">
+                                
+                                    <img src="images/codepen_ico.svg" alt="codepen_ico">
+
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-tile">
+                        
+                            <p>Product Landing Page</p>
+
+                                    <img class="project-image" src="https://screenshot.codepen.io/1505859.dLVjEy.6196c499-7858-4782-879b-f921e07657cd.png" alt="project_1">
+    
+                            <div class="btn">
+                                <a class="button" href="" target="_blank">
+                                    
+                                        <img src="images/github_ico.svg" alt="github_ico">
+                                  
+                                </a>
+                                <a class="button" href="" target="_blank">
+                                    
+                                        <img src="images/codepen_ico.svg" alt="codepen_ico">
+                               
+                                </a>
+                            </div>
+                        </div>
+                        
+                    <div class="project-tile">
+                        
+                        <p>Product Landing Page</p>
+
+                                <img class="project-image" src="https://screenshot.codepen.io/1505859.dLVjEy.6196c499-7858-4782-879b-f921e07657cd.png" alt="project_1">
+
+
+                        <div class="btn">
+                            <a class="button" href="" target="_blank">
+                                
+                                    <img src="images/github_ico.svg" alt="github_ico">
+
+                            </a>
+                            <a class="button" href="" target="_blank">
+                                
+                                    <img src="images/codepen_ico.svg" alt="codepen_ico">
+
+                            </a>
+                        </div>
+                    </div>
+                    
+                        <div class="project-tile">
+                        
+                            <p>Product Landing Page</p>
+
+                                    <img class="project-image" src="https://screenshot.codepen.io/1505859.dLVjEy.6196c499-7858-4782-879b-f921e07657cd.png" alt="project_1">
+    
+                            <div class="btn">
+                                <a class="button" href="" target="_blank">
+                                    
+                                        <img src="images/github_ico.svg" alt="github_ico">
+                                  
+                                </a>
+                                <a class="button" href="" target="_blank">
+                                    
+                                        <img src="images/codepen_ico.svg" alt="codepen_ico">
+                               
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="project-tile">
+                        
+                        <p>Product Landing Page</p>
+
+                                <img class="project-image" src="https://screenshot.codepen.io/1505859.dLVjEy.6196c499-7858-4782-879b-f921e07657cd.png" alt="project_1">
+
+
+                        <div class="btn">
+                            <a class="button" href="" target="_blank">
+                                
+                                    <img src="images/github_ico.svg" alt="github_ico">
+
+                            </a>
+                            <a class="button" href="" target="_blank">
+                                
+                                    <img src="images/codepen_ico.svg" alt="codepen_ico">
+
+                            </a>
+                        </div>
+                    </div>
+                    
+
                 </div>
             </div>
 
         </section>
 
+        <!-- <<<<<<<<<< section CONTACTS >>>>>>>>>>>>> -->
+        
         <section id="contacts" class="contacts">
 
             <div class="container">
-                <h3>contacts</h3>
+                <h2>contacts</h2>
                 
                 <ul>
                     <li>hello@webdevkos.com</li>
+                </ul>
+
+                <ul id="float-right">
                     <li>
-                        <img src="images/codepen_ico.svg" alt="codepen_ico">
-                        <ul>
-                            <li>
+                        <a href="" class="profile-link">
+                            <img src="images/codepen_ico.svg" alt="codepen_ico">
+                        </a>
+                    </li>
+                        
+                        
+                    <li>
+                        <a href="" class="profile-link">
                                 <img src="images/twitter_ico.svg" alt="twitter_ico">
-                            </li>
-                            <li>
-                                <img src="images/github_ico.svg" alt="github_ico">
-                            </li>
-                            <li>
-                                <img src="images/instagram_ico.svg" alt="instagram_ico">
-                            </li>
-                        </ul>
+                        </a>
+                    </li>
+                                       
+                    <li>
+                        <a href="" class="profile-link">
+                            <img src="images/github_ico.svg" alt="github_ico">          
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="profile-link">
+                            <img src="images/instagram_ico.svg" alt="instagram_ico">
+                                    
+                        </a>
                     </li>
                 </ul>
+                    
             </div>
         </section>
 
