@@ -11,6 +11,9 @@
     <title>Portfolio | Konstantin Gaydukov</title>
 </head>
 <body>
+
+    <!-- <<<<<<<<<< HEADER >>>>>>>>>>>>> -->    
+
     <header>
         <a href="#" id="logo">
             <p>wdk...</p>
@@ -22,11 +25,10 @@
             </a>
             <ul class="hide-mobile" id="nav">
                 <li id="exit" class="hide-desktop exit-btn">
-                    <p>WDK...</p>
                     <img src="images/exit_menu_ico.svg" alt="exit-menu">
                 </li>
                 <li>
-                    <h3>navigation</h3>
+                    <h2>navigation</h2>
                     
                 </li>
                 <li><a href="#about">about me</a></li>
@@ -37,13 +39,18 @@
     </header>
 
     <main>
+
+        <!-- <<<<<<<<<< section HERO >>>>>>>>>>>>> -->
+
         <section id="hero">
 
-            <div id="welcome-section" class="about_hero">
-                <div class="container">
-                    <h1>Web Developer</h1>
-                    
-                    <img class="laptops" src="images/laptops.svg" alt="two laptops">
+            <div id="welcome-section" class="container about_hero">
+                <div id="flex-welcome">
+                    <div id="hero-image">
+                        <h1>Web Developer</h1>
+                        
+                        <img class="laptops" src="images/laptops.svg" alt="two laptops">
+                    </div>
 
                     <div class="left">
                         <h3>about me</h3>
@@ -52,8 +59,8 @@
                 </div>
             </div>
 
-            <div class="projects_hero">
-                <div class="container">
+            <div class="container projects_hero">
+                <div>
                     <img class="ico" src="images/projects.svg" alt="grid of rectangles">
 
                     <div class="left">
@@ -63,8 +70,8 @@
                 </div>    
             </div>
             
-            <div class="contacts_hero">
-                <div class="container">
+            <div class="contacts_hero container">
+                <div>
                     <img class="ico" src="images/contacts.svg" alt="grid of rectangles">
 
                     <div class="left">
@@ -76,34 +83,42 @@
             
         </section>
 
-        <section class="about" id="about">
+        <!-- <<<<<<<<<< section ABOUT >>>>>>>>>>>>> -->        
+        
+        <section class="about container" id="about">
 
-            <div class="container">
+            <div>
 
                 <h2>about me</h2>
                 
-                
-                    <img class="avatar" src="images/WechatIMG25(croped).jpg" alt="">
-                
-                <div class="left">
-                    <p>Good day, everyone!</p>
+                <div class="grid-about">
 
-                    <p>My name is Konstantin, I’m from Russia but been living in China, Shenzhen for the past 6 years. My major is “mining engineering” but  I didn’t like the field. So few years after graduation I moved to China to teach English instead.</p> 
-        
-                    <p>I feel very passionate about coding and I’m in the middle of changing career. I always kept myself away from dealing with computers as I thought it is “not for me”. Even though I loved math, physics and general problem solving through all school and university years.</p>
-                            
-                    <p>I’m learning front end web development now(sharpening my HTML, CSS, Vanilla JS skills and planing to pick up React in a nearly future) but also interested in back end (Node, JAVA, Python).</p>
+                    <div class="avatar-grid">
+                        <img class="avatar" src="images/WechatIMG25(croped).jpg" alt="">
+                    </div>
+                    
+                    <div id="about-text">
+                        <p>Good day, everyone!</p>
+    
+                        <p>My name is Konstantin, I’m from Russia but been living in China, Shenzhen for the past 6 years. My major is “mining engineering” but  I didn’t like the field. So few years after graduation I moved to China to teach English instead.</p> 
+            
+                        <p>I feel very passionate about coding and I’m in the middle of changing career. I always kept myself away from dealing with computers as I thought it is “not for me”. Even though I loved math, physics and general problem solving through all school and university years.</p>
+                                
+                        <p>I’m learning front end web development now(sharpening my HTML, CSS, Vanilla JS skills and planing to pick up React in a nearly future) but also interested in back end (Node, JAVA, Python).</p>
+                    </div>
                 </div>
 
             </div>
         </section>
 
-        <section id="projects" class="projects">
-            <div class="container">
+        <!-- <<<<<<<<<< section PROJECTS >>>>>>>>>>>>> -->
+
+        <section id="projects" class="projects container">
+            <div class="">
                 <h2>projects</h2>
                 
     
-                <div class="grid">
+                <div class="grid-projects">
                     <div class="project-tile">
                         
                         <p>Product Landing Page</p>
@@ -297,16 +312,16 @@
 
         <!-- <<<<<<<<<< section CONTACTS >>>>>>>>>>>>> -->
         
-        <section id="contacts" class="contacts">
+        <section id="contacts" class="contacts container">
 
-            <div class="container">
+            <div>
                 <h2>contacts</h2>
                 
                 <ul>
                     <li>hello@webdevkos.com</li>
                 </ul>
 
-                <ul id="float-right">
+                <ul>
                     <li>
                         <a href="" class="profile-link">
                             <img src="images/codepen_ico.svg" alt="codepen_ico">
@@ -336,10 +351,11 @@
             </div>
         </section>
 
-        <footer>
-            <p>Designed and coded by Konstantin Gaydukov 2019</p>
-        </footer>
     </main>
+    
+    <footer>
+        <p>Designed and coded by Konstantin Gaydukov 2019</p>
+    </footer>
 
     <script>
 
