@@ -23,7 +23,7 @@
             <a href="#" class="hide-desktop">
                 <img id="menu" src="images/hamburger_menu_ico.svg" alt="toggle-menu">
             </a>
-            <ul class="hide-mobile" id="nav">
+            <ul class="menu-toggle" id="nav">
                 <li id="exit" class="hide-desktop exit-btn">
                     <img src="images/exit_menu_ico.svg" alt="exit-menu">
                 </li>
@@ -44,7 +44,7 @@
 
         <section id="hero">
 
-            <div id="welcome-section" class="container about_hero">
+            <div id="welcome-section" class="center-block about_hero">
                 <div id="flex-welcome">
                     <div id="hero-image">
                         <h1>Web Developer</h1>
@@ -53,29 +53,37 @@
                     </div>
 
                     <div class="left">
-                        <h3>about me</h3>
+                        <a href="#about">
+                            <h3>about me</h3>
+                        </a>
                         <p>building web aplicationsand websites for your needs.<p>
                     </div>
                 </div>
             </div>
 
-            <div class="container projects_hero">
+            <div class="center-block projects_hero">
                 <div>
-                    <img class="ico" src="images/projects.svg" alt="grid of rectangles">
-
+                    <a href="#projects">
+                        <img class="ico" src="images/projects.svg" alt="grid of rectangles">
+                    </a>
                     <div class="left">
-                        <h3>projects</h3>
+                        <a href="#projects">
+                            <h3>projects</h3>
+                        </a>
                         <p>creating elegant and functional custom-designed websites</p>
                     </div>
                 </div>    
             </div>
             
-            <div class="contacts_hero container">
+            <div class="contacts_hero center-block">
                 <div>
-                    <img class="ico" src="images/contacts.svg" alt="grid of rectangles">
-
+                    <a href="#contacts">
+                        <img class="ico" src="images/contacts.svg" alt="grid of rectangles">
+                    </a>
                     <div class="left">
-                        <h3>contacts</h3>
+                        <a href="#contacts">
+                            <h3>contacts</h3>
+                        </a>
                         <p>creating elegant and functional custom-designed websites</p>
                     </div>
                 </div>
@@ -85,7 +93,7 @@
 
         <!-- <<<<<<<<<< section ABOUT >>>>>>>>>>>>> -->        
         
-        <section class="about container" id="about">
+        <section class="about center-block" id="about">
 
             <div>
 
@@ -113,7 +121,7 @@
 
         <!-- <<<<<<<<<< section PROJECTS >>>>>>>>>>>>> -->
 
-        <section id="projects" class="projects container">
+        <section id="projects" class="projects center-block">
             <div class="">
                 <h2>projects</h2>
                 
@@ -312,49 +320,58 @@
 
         <!-- <<<<<<<<<< section CONTACTS >>>>>>>>>>>>> -->
         
-        <section id="contacts" class="contacts container">
+        <section id="contacts" class="grid-contacts">
+            <div class="hide-mobile"></div>
 
-            <div>
-                <h2>contacts</h2>
-                
-                <ul>
-                    <li>hello@webdevkos.com</li>
-                </ul>
-
-                <ul>
-                    <li>
-                        <a href="" class="profile-link">
-                            <img src="images/codepen_ico.svg" alt="codepen_ico">
-                        </a>
-                    </li>
-                        
-                        
-                    <li>
-                        <a href="" class="profile-link">
-                                <img src="images/twitter_ico.svg" alt="twitter_ico">
-                        </a>
-                    </li>
-                                       
-                    <li>
-                        <a href="" class="profile-link">
-                            <img src="images/github_ico.svg" alt="github_ico">          
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" class="profile-link">
-                            <img src="images/instagram_ico.svg" alt="instagram_ico">
-                                    
-                        </a>
-                    </li>
-                </ul>
+            <div class="contacts center-block">
+                <div>
+                    <h2>contacts</h2>
                     
+                    <ul>
+                        <li>hello@webdevkos.com</li>
+                    </ul>
+    
+                    <ul>
+                        <li>
+                            <a href="" class="profile-link">
+                                <img src="images/codepen_ico.svg" alt="codepen_ico">
+                            </a>
+                        </li>
+                            
+                            
+                        <li>
+                            <a href="" class="profile-link">
+                                    <img src="images/twitter_ico.svg" alt="twitter_ico">
+                            </a>
+                        </li>
+                                           
+                        <li>
+                            <a href="" class="profile-link">
+                                <img src="images/github_ico.svg" alt="github_ico">          
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="profile-link">
+                                <img src="images/instagram_ico.svg" alt="instagram_ico">
+                                        
+                            </a>
+                        </li>
+                    </ul>
+                        
+                </div>
             </div>
+
+            <div class="hide-mobile"></div>
         </section>
 
     </main>
     
-    <footer>
+    <footer class="grid-contacts">
+        <div class="hide-mobile"></div>
+
         <p>Designed and coded by Konstantin Gaydukov 2019</p>
+
+        <div class="hide-mobile"></div>
     </footer>
 
     <script>
@@ -364,11 +381,11 @@
             var exit = document.getElementById('exit');
     
             menu.addEventListener('click', function(e){
-                nav.classList.toggle('hide-mobile');
+                nav.classList.toggle('menu-toggle');
                 e.preventDefault();
             });
             exit.addEventListener('click', function(e){
-                nav.classList.add('hide-mobile');
+                nav.classList.add('menu-toggle');
                 e.preventDefault();
             });
     

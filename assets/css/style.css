@@ -14,7 +14,7 @@ body {
     min-width: 300px;
     font-family: 'Montserrat', sans-serif;
     text-shadow: .5px .5px 1px #57575E;
-    background-color: #8AC4E3;
+    background-color: #374785;
     color: #f1f1f1;
     
 }
@@ -25,7 +25,14 @@ ul {
     padding: 0;
 }
 
+a {
+    color: #f1f1f1;
+    text-decoration: none;
+}
 
+.hide-mobile {
+    display: none;
+}
 
 /* header */
 header {
@@ -38,8 +45,6 @@ header {
 }
 
 #logo {
-    text-decoration: none;
-    color: #F1F1F1;
     z-index: 100;
 }
 
@@ -50,7 +55,7 @@ header {
 
 
 /* navigation */
-.hide-mobile {
+.menu-toggle {
     display: none;
 }
 
@@ -79,8 +84,6 @@ nav ul {
 
 
 nav ul li a {
-    color: #fff;
-    text-decoration: none;
     display: block;
     width: 100%;
     padding: 1em 2em;
@@ -93,10 +96,6 @@ nav ul li a:hover {
 
 .exit-btn {
     position: fixed;
-    /* margin-bottom: 1em; */
-    /* margin-top: -1.9em; */
-    /* text-align: right; */
-    /* padding: 0 1.5em; */
     cursor: pointer;
     top: 2rem;
     right: 2.5rem;
@@ -119,33 +118,24 @@ nav ul li a:hover {
 /* welcome-section section */
 .projects_hero, .contacts_hero, .about_hero, .contacts{
     height: 100vh;
+
 }
 
 /* centering all the elements */
 
-.container {
+.center-block {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 2rem;
 }
 
-/* .projects_hero, .contacts_hero, .about_hero, .projects, .contacts, .about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20% 15%;
-
-} */
-
-
-
 .projects_hero, .projects {
     background-color: #F76C6C;
 }
 
-.contacts_hero, .contacts, footer {
-    background-color: #374785;
+#welcome-section {
+    background-color: #8AC4E3;
 }
 
 
@@ -224,9 +214,6 @@ h2 {
     margin-bottom: 2rem;
 }
 
-.project-tile {
-}
-
 .project-image {
     width: 100%;
     object-fit: cover;
@@ -286,6 +273,8 @@ footer p {
         display: grid;
         grid-template-columns: 1fr 3fr;
         grid-gap: 50px;
+        max-width: 900px;
+
     }
 
     .avatar {
@@ -332,8 +321,6 @@ footer p {
     }
 
     .laptops {
-        /* position: relative;
-        right: 50px; */
         width: 100%;
         margin-top: calc(50vh - 170px);
     }
@@ -363,6 +350,22 @@ footer p {
     #about {
         height: 80vh;
     }
+
+    /* <<<<<<<<<< section contacts >>>>>>>>>> */
+
+    .hide-mobile {
+        display: block;
+        background-color: #24305E;
+        width: 100%;
+        height: 100%;
+    }
+
+    .grid-contacts {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
 }
 
 @media only screen and (min-width: 1280px) {
