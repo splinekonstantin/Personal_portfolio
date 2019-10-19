@@ -19,22 +19,69 @@
             <p>wdk...</p>
         </a>
 
-        <nav id="navbar">
-            <a href="#" class="hide-desktop">
+        <nav>
+            <a href="#" class="">
                 <img id="menu" src="images/hamburger_menu_ico.svg" alt="toggle-menu">
             </a>
-            <ul class="menu-toggle" id="nav">
-                <li id="exit" class="hide-desktop exit-btn">
-                    <img src="images/exit_menu_ico.svg" alt="exit-menu">
-                </li>
-                <li>
-                    <h2>navigation</h2>
+
+            <div  class="menu-toggle" id="nav">
+
+                <div class="hide-mobile">
+                        <div class="contacts center-block">
+                                <div>
+                                    <h2>contacts</h2>
+                                    
+                                    <ul>
+                                        <li>hello@webdevkos.com</li>
+                                    </ul>
                     
-                </li>
-                <li><a href="#about">about me</a></li>
-                <li><a href="#projects">projects</a></li>
-                <li><a href="#contacts">contacts</a></li>
-            </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="" class="profile-link">
+                                                <img src="images/codepen_ico.svg" alt="codepen_ico">
+                                            </a>
+                                        </li>
+                                            
+                                            
+                                        <li>
+                                            <a href="" class="profile-link">
+                                                    <img src="images/twitter_ico.svg" alt="twitter_ico">
+                                            </a>
+                                        </li>
+                                                           
+                                        <li>
+                                            <a href="" class="profile-link">
+                                                <img src="images/github_ico.svg" alt="github_ico">          
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="profile-link">
+                                                <img src="images/instagram_ico.svg" alt="instagram_ico">
+                                                        
+                                            </a>
+                                        </li>
+                                    </ul>
+                                        
+                                </div>
+                            </div>
+                </div>
+                
+                <div class="center-block">
+                    <div>
+                        <img id="exit" src="images/exit_menu_ico.svg" alt="exit-menu">
+
+                        <h2>navigation</h2>
+                        
+                        <ul>
+                            <li><a href="#about"><h3>about me</h3></a></li>
+                            <li><a href="#projects"><h3>projects</h3></a></li>
+                            <li><a href="#contacts"><h3>contacts</h3></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            
+            </div>
         </nav>
     </header>
 
@@ -321,7 +368,15 @@
         <!-- <<<<<<<<<< section CONTACTS >>>>>>>>>>>>> -->
         
         <section id="contacts" class="grid-contacts">
-            <div class="hide-mobile"></div>
+            <div class="hide-mobile contacts-side">
+                    <ul>
+                        <li>
+                            <a href="#about">
+                                <h3>about me</h3>
+                            </a>
+                        </li>
+                    </ul>
+            </div>
 
             <div class="contacts center-block">
                 <div>
@@ -361,7 +416,15 @@
                 </div>
             </div>
 
-            <div class="hide-mobile"></div>
+            <div class="hide-mobile contacts-side">
+                    <ul>
+                        <li>
+                            <a href="#projects">
+                                <h3>projects</h3>
+                            </a>
+                        </li>
+                    </ul>
+            </div>
         </section>
 
     </main>
