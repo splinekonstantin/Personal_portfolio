@@ -20,65 +20,65 @@
         </a>
 
         <nav>
-            <a href="#" class="">
+            <a href="#">
                 <img id="menu" src="images/hamburger_menu_ico.svg" alt="toggle-menu">
             </a>
 
             <div  class="menu-toggle" id="nav">
                 <div class="grid-nav">
-
-                </div>
-                <!-- <div class="hide-mobile">
-                        <div class="contacts center-block">
-                                <div>
-                                    <h2>contacts</h2>
-                                    
-                                    <ul>
-                                        <li>hello@webdevkos.com</li>
-                                    </ul>
-                    
-                                    <ul>
-                                        <li>
-                                            <a href="" class="profile-link">
-                                                <img src="images/codepen_ico.svg" alt="codepen_ico">
-                                            </a>
-                                        </li>
-                                            
-                                            
-                                        <li>
-                                            <a href="" class="profile-link">
-                                                    <img src="images/twitter_ico.svg" alt="twitter_ico">
-                                            </a>
-                                        </li>
-                                                           
-                                        <li>
-                                            <a href="" class="profile-link">
-                                                <img src="images/github_ico.svg" alt="github_ico">          
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="" class="profile-link">
-                                                <img src="images/instagram_ico.svg" alt="instagram_ico">
-                                                        
-                                            </a>
-                                        </li>
-                                    </ul>
+                    <div class="hide-mobile">
+                            <div class="contacts center-block">
+                                    <div>
+                                        <h2>contacts</h2>
                                         
-                                </div>
-                            </div>
-                </div> -->
-                
-                <div class="center-block">
-                    <div>
-                        <img id="exit" src="images/exit_menu_ico.svg" alt="exit-menu">
-
-                        <h2>navigation</h2>
+                                        <ul>
+                                            <li>hello@webdevkos.com</li>
+                                        </ul>
                         
-                        <ul>
-                            <li><a href="#about"><h3>about me</h3></a></li>
-                            <li><a href="#projects"><h3>projects</h3></a></li>
-                            <li><a href="#contacts"><h3>contacts</h3></a></li>
-                        </ul>
+                                        <ul>
+                                            <li>
+                                                <a href="" class="profile-link" target="_blank">
+                                                    <img src="images/codepen_ico.svg" alt="codepen_ico">
+                                                </a>
+                                            </li>
+                                                
+                                                
+                                            <li>
+                                                <a href="" class="profile-link" target="_blank">
+                                                        <img src="images/twitter_ico.svg" alt="twitter_ico">
+                                                </a>
+                                            </li>
+                                                               
+                                            <li>
+                                                <a href="" class="profile-link" target="_blank">
+                                                    <img src="images/github_ico.svg" alt="github_ico">          
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="profile-link" target="_blank">
+                                                    <img src="images/instagram_ico.svg" alt="instagram_ico">
+                                                            
+                                                </a>
+                                            </li>
+                                        </ul>
+                                            
+                                    </div>
+                                </div>
+                    </div>
+                    
+                    <div class="center-block">
+                        <div>
+                            <img id="exit" src="images/exit_menu_ico.svg" alt="exit-menu">
+    
+                            <h2>navigation</h2>
+                            
+                            <ul id="nav-menu">
+                                <li><a id="menu-item" href="#about" class="menu-items"><h3>about me</h3></a></li>
+                                <li><a href="#projects" class="menu-items"><h3>projects</h3></a></li>
+                                <li><a href="#contacts" class="menu-items"><h3>contacts</h3></a></li>
+                            </ul>
+                        </div>
+    
                     </div>
 
                 </div>
@@ -390,25 +390,25 @@
     
                     <ul>
                         <li>
-                            <a href="" class="profile-link">
+                            <a href="" class="profile-link" target="_blank">
                                 <img src="images/codepen_ico.svg" alt="codepen_ico">
                             </a>
                         </li>
                             
                             
                         <li>
-                            <a href="" class="profile-link">
+                            <a href="" class="profile-link" target="_blank">
                                     <img src="images/twitter_ico.svg" alt="twitter_ico">
                             </a>
                         </li>
                                            
                         <li>
-                            <a href="" class="profile-link">
+                            <a href="" class="profile-link" target="_blank">
                                 <img src="images/github_ico.svg" alt="github_ico">          
                             </a>
                         </li>
                         <li>
-                            <a href="" class="profile-link">
+                            <a href="" class="profile-link" target="_blank">
                                 <img src="images/instagram_ico.svg" alt="instagram_ico">
                                         
                             </a>
@@ -432,11 +432,11 @@
     </main>
     
     <footer class="grid-contacts">
-        <div class="hide-mobile"></div>
+        <div class="hide-mobile contacts-side"></div>
 
         <p>Designed and coded by Konstantin Gaydukov 2019</p>
 
-        <div class="hide-mobile"></div>
+        <div class="hide-mobile contacts-side"></div>
     </footer>
 
     <script>
@@ -444,6 +444,7 @@
             var menu = document.getElementById('menu');
             var nav = document.getElementById('nav');
             var exit = document.getElementById('exit');
+            var nav_menu = document.getElementById('menu-item');
     
             menu.addEventListener('click', function(e){
                 nav.classList.toggle('menu-toggle');
@@ -454,7 +455,10 @@
                 e.preventDefault();
             });
     
-    
+            nav_menu.addEventListener('click', function(e){
+                nav.classList.toggle('menu-toggle');
+                e.preventDefault();
+            });
           
             
             
