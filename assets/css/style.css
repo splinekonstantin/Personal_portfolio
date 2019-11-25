@@ -1,6 +1,7 @@
 /* general styling */
-* {
+*, ::before, ::after {
     box-sizing: border-box;
+    /* backface-visibility: hidden; */
 }
 
 html {
@@ -28,6 +29,8 @@ ul {
 a {
     color: #f1f1f1;
     text-decoration: none;
+    display: block;
+    transition: all .3s ease;
 }
 
 .hide-mobile {
@@ -74,9 +77,6 @@ nav h2 {
     top: 0;
     right: 0;
     background: #F9A1A1;
-    
-    /* display: grid;
-    align-content: center; */
 }
 
 #nav .center-block {
@@ -90,11 +90,12 @@ nav h2 {
 }
 
 .menu-items {
-    display: block;
     padding: 1em;
 }
 
-nav ul li a:hover {
+nav a:hover, #contacts a:hover, #hero a:hover {
+    transform: scale(1.1);
+    
 }
 
 #exit {
@@ -112,9 +113,14 @@ nav ul li a:hover {
 } */
 
 /* welcome-section section */
-.projects_hero, .contacts_hero, .about_hero, .contacts{
+.projects_hero, .contacts_hero, .contacts{
     height: 100vh;
+    min-height: 325px;
+}
 
+.about_hero {
+    height: 100vh;
+    min-height: 650px;
 }
 
 /* centering all the elements */
@@ -139,7 +145,6 @@ nav ul li a:hover {
 /* hero: about */
 h1 {
     margin-top: 2em;
-    /* font-size: 1.7em; */
     color: #374785;
     text-shadow: 3px -3px 0px #F1F1F1;
 
@@ -156,12 +161,17 @@ h1 {
     width: 55%;
     max-width: 130px;
     margin-top: 15%;
+    /* z-index: 110; */
 }
 
 .left {
     text-align: left;
     margin-top: 20%;
     max-width: 300px;
+}
+
+.left a:hover {
+    margin-left: 1em;
 }
 
 /* about section */
@@ -289,6 +299,10 @@ footer p {
 @media only screen and (min-width: 1024px) {
     /* <<<<<<<<<< section hero >>>>>>>>>> */
 
+    #about, #contacts {
+        min-height: 400px;
+    }
+    
     #hero {
         display: grid;
         grid-template: repeat(2, 1fr)/repeat(3, 1fr);;   
@@ -398,4 +412,47 @@ footer p {
         margin-left: 4rem;
     }
 
+}
+
+
+/* animations */
+
+#hero-image, .ico {
+    animation-name: fadeInUp;
+    animation-duration: .8s;
+}
+
+.left {
+    animation-name: fadeInRight;
+    animation-duration: .8s;
+}
+
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(-10vh);
+        opacity: 0;
+    }
+    80% {
+        transform: translateY(1vh);
+        opacity: .8;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes fadeInRight {
+    0% {
+        transform: translateX(10vh);
+        opacity: 0;
+    }
+    80% {
+        transform: translateX(-1vh);
+        opacity: .8;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
