@@ -299,9 +299,9 @@ footer p {
 @media only screen and (min-width: 1024px) {
     /* <<<<<<<<<< section hero >>>>>>>>>> */
 
-    #about, #contacts {
+    /* #about, #contacts {
         min-height: 400px;
-    }
+    } */
     
     #hero {
         display: grid;
