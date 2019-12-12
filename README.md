@@ -1,4 +1,4 @@
-# Personal_portfolio
+# Personal portfolio
 @freecodecamp Personal Portfolio Responsive Web Design Project
 
 A single-page responsive website designed by me from a scratch in Adobe XD that represents my projects. 
